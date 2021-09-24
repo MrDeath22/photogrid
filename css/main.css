@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Prata', serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-group {
+    position: relative;
+}
+
+.title-background {
+    font-size: 120px;
+    font-weight: 400px;
+    color: #ccc;
+    position: absolute;
+    opacity: 0.2;
+    top: -140px;
+    left: -150px;
+    letter-spacing: 10px;
+}
+
+.title-latest {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+.text {
+    margin: 0;
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pictures-gallary {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(5,auto);
+    grid-gap: 40px;
+}
+
+.img-box:hover .pic-content{
+    transform: translate(0,-10%);
+    opacity: 1;
+}
+
+.pic-content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    padding: 1.25rem 1.875rem;
+    opacity: 0;
+    transition: transform 0.7s ease;
+}
+
+.img-box:hover .pictures {
+    opacity: 0.6;
+}
+
+.pictures {
+    width: 100%;
+    transition: opacity 0.7s ease;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box2 {
+    position: relative;
+    bottom: 300px;
+}
+
+.pic-content {
+    top: 40px;
+}
+
+.big-img {
+    top: 35%;
+}
+
+.content-title {
+    position: relative;
+    left: 10%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.content-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#2a2a2d;
+    margin: 0 8px;
+    transition: background 0.3s ease;
+}
+
+.content-item:hover {
+    background-color: #ffffffd2;
+}
+
+.con-link {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+.con-link:hover {
+    color: #252525;
+}
+
+.view-more__inner {
+    position: relative;
+    top: -15%;
+}
+
+.view-more {
+    font-family: 'Heebo', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #715C41;
+    padding: 20px 40px;
+    padding-bottom: 18px;
+    transition: background 0.3s ease;
+}
+.view-more:hover {
+    background-color: #e7d2b6;
+    color: #252525;
+}
